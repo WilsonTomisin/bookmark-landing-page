@@ -18,6 +18,23 @@ const Main = () => {
         {text: 'Speedy sharing', Link:'/speedysharing'},
         {text: 'Easy sharing', Link: '/easysharing'}
     ]
+
+    const dropdown = [
+        { question: 'What is Bookmark?' },
+        {question: 'How can I request a new browser?'},
+        {question: 'Is there a mobile app?'},
+        {question: 'What about other Chromium browsers?'}
+    ]
+    const [dropDownData, setdropDownData] = useState(dropdown.map((item,index)=>{
+        return { ...item, clicked: false}
+    }))
+
+    const handleClick =(itemText)=>{
+        const updatedData = dropDownData.map((item, index)=>{
+            return item.question === itemText ? {...item, clicked: !item.clicked}: item
+        })
+        setdropDownData(updatedData)
+    }
   return (
     <div className=' mt-24 px-24 mb-14'>
         <div className=' text-center'>
@@ -89,55 +106,30 @@ const Main = () => {
                 </p>
             </div>
 
-            <div className=' mt-11 border-b-2 border-t-2 border-slate-400 px-64 mx-auto'>
-                <div className=' border-b-2 border-slate-400 py-3 cursor-pointer'>
-                   <div className=' flex justify-between'>
-                    <span className=' font-semibold'> What is a bookmark? </span>
-                    <span> <IoIosArrowDown/></span>
-                   </div>
-                    {isOpen && <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Vitae quae eligendi eos quis, quia repellat non doloribus 
-                        asperiores nihil aspernatur praesentium veritatis magni neque 
-                        dolorem? Perferendis fuga iusto fugiat perspiciatis.
-                    </div> }
-                </div>
-                <div className=' border-b-2 border-slate-400 py-3 cursor-pointer'>
-                   <div className=' flex justify-between'>
-                    <span className=' font-semibold'> How can i request a new browser? </span>
-                    <span> <IoIosArrowDown/></span>
-                   </div>
-                   {isOpen && <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Vitae quae eligendi eos quis, quia repellat non doloribus 
-                        asperiores nihil aspernatur praesentium veritatis magni neque 
-                        dolorem? Perferendis fuga iusto fugiat perspiciatis.
-                    </div> }
-                </div>
-                <div className='border-b-2 border-slate-400 py-3 cursor-pointer'>
-                   <div className=' flex justify-between'>
-                    <span className=' font-semibold'> Is there a mobile app? </span>
-                    <span> <IoIosArrowDown/></span>
-                   </div>
-                   {isOpen && <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Vitae quae eligendi eos quis, quia repellat non doloribus 
-                        asperiores nihil aspernatur praesentium veritatis magni neque 
-                        dolorem? Perferendis fuga iusto fugiat perspiciatis.
-                    </div> }
-                </div>
-                <div className=' border-b-2 border-slate-400 py-3 cursor-pointer'>
-                   <div className=' flex justify-between '>
-                        <span className=' font-semibold'> What about other Chromium browsers? </span>
-                        <span> <IoIosArrowDown/></span>
-                   </div>
-                   {isOpen && <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Vitae quae eligendi eos quis, quia repellat non doloribus 
-                        asperiores nihil aspernatur praesentium veritatis magni neque 
-                        dolorem? Perferendis fuga iusto fugiat perspiciatis.
-                    </div> }
-                </div>
+            <div className=' mt-11 px-64 mx-auto'>
+               
+                { dropDownData.map((item,index)=>{
+                    const translate = item.clicked ? ' rotate-180 text-Soft-Red' : ' text-blue-500'
+                    const display = item.clicked? ' opacity-100' : 'opacity-0'
+                    const topB = index === 0 ? 'border-t border-slate-400': ''
+
+                    return(
+                        <div className={` ${topB} border-b border-slate-400 py-3 cursor-pointer`} key={index}>
+                            <div className=' flex justify-between' onClick={()=>( handleClick(item.question))}>
+                                <span className=' font-semibold transition-colors duration-500 ease-in-out hover:text-Soft-Red'> {item.question} </span>
+                                <span className={` transition-transform duration-500 ease-in-out ${translate} origin-center font-bold text-xl `}> <IoIosArrowDown/></span>
+                            </div>
+                            { item.clicked && <div className={` transition-opacity duration-1000 ease-in-out opacity-70 font-semibold leading-7 mt-10`}>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Vitae quae eligendi eos quis, quia repellat non doloribus 
+                                asperiores nihil aspernatur praesentium veritatis magni neque 
+                                dolorem? Perferendis fuga iusto fugiat perspiciatis.
+                            </div> }
+
+                        </div>
+                    )
+                })}
+                <button className=' rounded-lg bg-blue-500 font-semibold text-white mt-11 ml-48 p-3'> More info</button>
             </div>
         </div>
     </div>
