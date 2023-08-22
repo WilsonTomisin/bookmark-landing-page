@@ -10,7 +10,7 @@ export const Easysharing=()=>{
                 <img src={image3} alt=" banner image" />
             </div>
             <div className=' w-1/2 pl-20 easy-main-banner2'>
-                <h1 className=' text-3xl font-bold '>
+                <h1 className=' text-3xl font-bold'>
                     Share your bookmarks
                 </h1>
                 <p className=' font-semibold text-md text-slate-500 leading-7 py-4'>
@@ -18,7 +18,13 @@ export const Easysharing=()=>{
                     others. Create a shareable link that you can send
                     at the click of a button.
                 </p>
-                <button className=' bg-blue-700 text-white font-semibold p-3 rounded-lg mt-5'>More info</button>
+                <button className=' bg-Soft-Blue text-white font-semibold p-3 rounded-lg mt-5
+                 transition-all duration-300 ease-in-out border-2
+                 hover:bg-white
+                  hover:text-Soft-Blue
+                   hover:border-Soft-Blue'>
+                    More info
+                </button>
             </div>
         
         </div>
@@ -41,7 +47,13 @@ export const Speedysharing=()=>{
                     in no time at all. No need to trawl through all of your
                     bookmarks.
                 </p>
-                <button className=' bg-blue-700 text-white font-semibold p-3 rounded-lg mt-5'>More info</button>
+                <button className=' bg-Soft-Blue text-white font-semibold p-3 rounded-lg mt-5
+                 transition-all duration-300 border-2 
+                 hover:bg-white
+                  hover:text-Soft-Blue
+                   hover:border-Soft-Blue'>
+                    More info
+                </button>
             </div>
         
         </div>
@@ -63,7 +75,13 @@ export const SimpleBookmark =()=>{
                     Our simple drag-and-drop interface gives you complete
                     control over how you manage your favourite sites
                 </p>
-                <button className=' bg-blue-700 text-white font-semibold p-3 rounded-lg mt-5'>More info</button>
+                <button className=' bg-Soft-Blue text-white font-semibold p-3 rounded-lg mt-5
+                transition-all duration-300 border-2 
+                hover:bg-white
+                 hover:text-Soft-Blue
+                  hover:border-Soft-Blue'>
+                    More info
+                </button>
             </div>
         
         </div>

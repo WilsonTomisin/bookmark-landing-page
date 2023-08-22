@@ -1,0 +1,5 @@
+.login-btn:hover{
+    border: 2px solid hsl(0, 94%, 66%);
+    background-color: #fff;
+    color: hsl(0, 94%, 66%) ;
+}

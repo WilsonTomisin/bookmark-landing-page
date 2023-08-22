@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'Soft-Red': 'hsl(0, 94%, 66%)'
+        'Soft-Red': 'hsl(0, 94%, 66%)',
+        'Soft-Blue': 'hsl(231, 69%, 60%)',
+        'Very-Dark-Blue': 'hsl(229, 31%, 21%)'
       }
     },
   },

@@ -51,7 +51,7 @@ const Main = () => {
                     const padding = index == 1 ? 'pr-14': ''
                     const activeText = SelectedLink == item.text ? 'selected': ''
                     return(
-                        <li key={index} className={` mb-5 ${padding} ${activeText}`} onClick={()=>setSelectedLink(item.text)}>
+                        <li key={index} className={` mb-5 ${padding} ${activeText} transition-all duration-300 hover:text-Soft-Red `} onClick={()=>setSelectedLink(item.text)}>
                             <Link to={item.Link}> {item.text}</Link>
                         </li>
                     )
@@ -72,31 +72,50 @@ const Main = () => {
                     know if you've got a favourite you'd like us to priortize.
                 </p>
             </div>
-            <div className=' flex items-center justify-between text-center mt-20'>
+            <div className=' flex items-center justify-between text-center mt-5'>
                 <div className=' rounded-lg py-8 shadow-lg shadow-slate-400'>
                     <img src={chrome} alt="chrome image" className=' mx-auto px-8 pb-8' />
                     <h1 className=' text-xl font-bold px-8 mb-3'>Add to chrome</h1>
                     <p className=' text-slate-400 px-8 mb-6 text-sm font-medium'>Minimum Version 62</p>
                     <img src={border} alt="dotted border" className=' mb-4'/>
-                    <button className=' text-white font-semibold bg-blue-600 px-10 py-2 text-sm rounded-lg mx-8'>Add and install extension</button>
+                    <button className=' text-white font-semibold bg-Soft-Blue px-10 py-2 text-sm rounded-lg mx-8
+                    transition-all duration-300 ease-in-out
+                    border-2 
+                    hover:bg-white
+                     hover:text-Soft-Blue
+                      hover:border-Soft-Blue'>
+                        Add and install extension
+                    </button>
                 </div>
                 <div className=' rounded-lg py-8 shadow-lg shadow-slate-400 mt-20'>
                     <img src={firefox} alt="firefox image" className='mx-auto px-8 pb-8' />
                     <h1 className=' text-xl font-bold px-8 mb-3'>Add to firefox</h1>
                     <p className=' text-slate-400  px-8  mb-6 text-sm font-medium'>Minimum Version 55</p>
                     <img src={border} alt="dotted border" className=' mb-4'/>
-                    <button className=' text-white font-semibold bg-blue-600 px-10 py-2 text-sm rounded-lg mx-8'>Add and install extension</button>
+                    <button className=' text-white font-semibold bg-Soft-Blue px-10 py-2 text-sm rounded-lg mx-8
+                     transition-all duration-300 ease-in-out border-2 
+                     hover:bg-white
+                      hover:text-Soft-Blue
+                       hover:border-Soft-Blue'>
+                        Add and install extension
+                    </button>
                 </div>
                 <div className=' rounded-lg py-8 shadow-lg shadow-slate-400 mt-40'>
                     <img src={opera} alt="opera image" className='mx-auto px-8 pb-8' />
                     <h1 className=' text-xl font-bold px-8 mb-3'>Add to Opera</h1>
                     <p className=' text-slate-400 px-8 mb-6 text-sm font-medium'>Minimum Version 46</p>
                     <img src={border} alt="dottedborder" className=' mb-4'/>
-                    <button className=' text-white font-semibold bg-blue-600 px-10 py-2 text-sm rounded-lg mx-8'>Add and install extension</button>
+                    <button className=' text-white font-semibold bg-Soft-Blue px-10 py-2 text-sm rounded-lg mx-8
+                      transition-all duration-300 ease-in-out border-2 
+                     hover:bg-white
+                      hover:text-Soft-Blue
+                       hover:border-Soft-Blue'>
+                        Add and install extension
+                    </button>
                 </div>
             </div>
         </div>
-        <div className=' mt-56'>
+        <div className=' mt-40'>
             <div className=' text-center'>
                 <h1 className=' text-3xl font-bold mb-7'>Frequently Asked questions</h1>
                 <p className=' text-slate-400 font-semibold px-64 '>
@@ -129,7 +148,13 @@ const Main = () => {
                         </div>
                     )
                 })}
-                <button className=' rounded-lg bg-blue-500 font-semibold text-white mt-11 ml-48 p-3'> More info</button>
+                <button className=' rounded-lg bg-Soft-Blue font-semibold
+                 text-white mt-11 ml-48 p-3 transition-all duration-300 border-2 
+                 hover:bg-white
+                  hover:text-Soft-Blue
+                   hover:border-Soft-Blue'> 
+                    More info
+                </button>
             </div>
         </div>
     </div>
