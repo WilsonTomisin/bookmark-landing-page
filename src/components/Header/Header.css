@@ -1,0 +1,11 @@
+.main-container2{
+    border-radius: 0px 0px 0px 250px;
+    background-color: rgb(47, 47, 253);
+    position: relative;
+    left: 100px;
+}
+.main-container2 img{
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+}

@@ -1,0 +1,89 @@
+.selected{
+    /* font-family: fantasy; */
+    transition: all 1s ease-in-out;
+    color: black;
+}
+.selected::after{
+    content: '';
+    display: block;
+    border-bottom: 7px solid  hsl(0, 94%, 66%);
+    border-radius: 10px;
+    position: relative;
+    top: 23px;
+}
+.simple-main-banner{
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+.simple-main-banner2{
+    position: relative;
+    bottom: 100px;
+}
+.simple-main-banner::before{
+    content: '';
+    display: block;
+    background-color: rgb(46, 46, 252);
+    width:100%;
+    position: absolute;
+    height: 300px;
+    top: 0px;
+    right: 100px;
+    border-radius: 0px 0px 100px 0px ;
+    z-index: -10;
+}
+.simple-main-banner img{
+    position: relative;
+    bottom: 100px;
+}
+
+/* easy banner section */
+.easy-main-banner{
+    position: relative;
+}
+.easy-main-banner2{
+    position: relative;
+    bottom: 100px;
+}
+.easy-main-banner::before{
+    content: '';
+    display: block;
+    background-color: rgb(46, 46, 252);
+    width:100%;
+    position: absolute;
+    height: 300px;
+    top: 0px;
+    right: 100px;
+    border-radius: 0px 0px 100px 0px ;
+    z-index: -10;
+}
+.easy-main-banner img{
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+
+/* Speedy section */
+.speedy-main-banner{
+    position: relative;
+}
+.speedy-main-banner2{
+    position: relative;
+    bottom: 100px;
+}
+.speedy-main-banner::before{
+    content: '';
+    display: block;
+    background-color: rgb(46, 46, 252);
+    width:100%;
+    position: absolute;
+    height: 300px;
+    top: 0px;
+    right: 100px;
+    border-radius: 0px 0px 100px 0px ;
+    z-index: -10;
+}
+.speedy-main-banner img{
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
