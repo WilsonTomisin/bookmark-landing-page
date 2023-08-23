@@ -3,3 +3,47 @@
     background-color: #fff;
     color: hsl(0, 94%, 66%) ;
 }
+.hamburger-menu-btn{
+    height: auto;
+}
+.hamburger-menu .hamburger-menu-btn div{
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    position: relative;
+    bottom: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.hamburger-menu-btn div:not(:last-child){
+    margin-bottom: 7px;
+}
+.hamburger-menu-btn input{
+    position: relative;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+}
+
+.hamburger-menu-btn input:checked ~ div:nth-child(2){
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+.hamburger-menu-btn input:checked ~ div:nth-child(3){
+    opacity: 0;
+}
+.hamburger-menu-btn input:checked ~ div:nth-child(4){
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+}
+.hamburger-menu-btn .hamburger-menulinks{
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    transform: translate( 105%);
+    background-color: #ededed;
+
+}
+.hamburger-menu-btn input:checked ~ .hamburger-menulinks{
+    transform: translate(-105%);
+}

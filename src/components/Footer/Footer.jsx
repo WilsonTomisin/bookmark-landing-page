@@ -8,10 +8,7 @@ const Footer = () => {
 
   const notValid = !email.valid ? ' border-red-500' : 'border-green-500';
 
-  function handleSubmit() {
-    
-    
-  }
+
 
   const ErrorMessage = ()=>{
     return(
@@ -25,7 +22,7 @@ const Footer = () => {
       <div className=' bg-Soft-Blue py-20 px-72 text-center'>
             <h1 className=' text-white font-semibold text-xl mb-3'> 35,000+ Already Joined</h1>
             <h1 className=' text-white font-bold text-3xl '>Stay up-to-date with What we're doing</h1>
-            <form action="" className=' mt-4' onSubmit={handleSubmit}>
+            <form className=' mt-4'>
                 <input type="email" 
                 placeholder='enter your email address' 
                 value={email.data}

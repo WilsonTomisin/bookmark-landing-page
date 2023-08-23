@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className=' flex items-center justify-between '>
         <img src={image} alt="logo" />
-        <ul className=' flex items-center justify-between cursor-pointer'>
+        <ul className=' flex items-center justify-between cursor-pointer laptop:block mobile:hidden'>
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Features</li>
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Pricing</li>
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Contact</li>
@@ -20,6 +20,26 @@ const Navbar = () => {
                 </button>
             </li>
         </ul>
+        <div className=' laptop:hidden mobile:block hamburger-menu'>
+          <div className=' hamburger-menu-btn'>
+            <input type="checkbox" />
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <ul className=' hamburger-menulinks'>
+                  <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Features</li>
+                  <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Pricing</li>
+                  <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Contact</li>
+                  <li>
+                      <button className=''>
+                        LOGIN
+                      </button>
+                  </li>
+              </ul>
+          </div>
+          
+        </div>
     </nav>
   )
 }

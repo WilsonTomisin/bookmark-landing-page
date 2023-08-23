@@ -6,7 +6,7 @@ import image3 from '../../assests/images/illustration-features-tab-2.svg'
 
 const Header = () => {
   return (
-    <div className='px-24 py-8'>
+    <div className='laptop:px-24 mobile:px-8 py-8'>
         <Navbar/>
 
         <div className=' flex justify-between pt-40'>
