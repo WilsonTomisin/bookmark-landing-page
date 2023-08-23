@@ -19,7 +19,7 @@ export const Easysharing=()=>{
                     at the click of a button.
                 </p>
                 <button className=' bg-Soft-Blue text-white font-semibold p-3 rounded-lg mt-5
-                 transition-all duration-300 ease-in-out border-2
+                 transition-all duration-300 ease-in-out border-2 border-Soft-Blue
                  hover:bg-white
                   hover:text-Soft-Blue
                    hover:border-Soft-Blue'>
@@ -48,7 +48,7 @@ export const Speedysharing=()=>{
                     bookmarks.
                 </p>
                 <button className=' bg-Soft-Blue text-white font-semibold p-3 rounded-lg mt-5
-                 transition-all duration-300 border-2 
+                 transition-all duration-300 border-2 border-Soft-Blue
                  hover:bg-white
                   hover:text-Soft-Blue
                    hover:border-Soft-Blue'>
@@ -76,7 +76,7 @@ export const SimpleBookmark =()=>{
                     control over how you manage your favourite sites
                 </p>
                 <button className=' bg-Soft-Blue text-white font-semibold p-3 rounded-lg mt-5
-                transition-all duration-300 border-2 
+                transition-all duration-300 border-2 border-Soft-Blue
                 hover:bg-white
                  hover:text-Soft-Blue
                   hover:border-Soft-Blue'>

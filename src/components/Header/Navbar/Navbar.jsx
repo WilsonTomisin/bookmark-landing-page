@@ -12,7 +12,7 @@ const Navbar = () => {
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Contact</li>
             <li>
                 <button className=' bg-Soft-Red rounded-lg text-white px-6 py-2 
-                font-semibold transition-all duration-300 ease-in-out  border-2 
+                font-semibold transition-all duration-300 ease-in-out  border-2  border-Soft-Red
                 hover:border-Soft-Red
                  hover:bg-white
                   hover:text-Soft-Red'>

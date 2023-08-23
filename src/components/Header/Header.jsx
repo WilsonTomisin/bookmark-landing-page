@@ -18,7 +18,7 @@ const Header = () => {
                     instantly. Try it for free
                 </p>
                 <button className=' bg-Soft-Blue rounded-md text-white font-semibold px-6 py-2
-                  transition-all duration-300 border-2 
+                  transition-all duration-300 border-2  border-Soft-Blue
                  hover:bg-white
                   hover:text-Soft-Blue
                    hover:border-Soft-Blue'>

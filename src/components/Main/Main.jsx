@@ -80,7 +80,7 @@ const Main = () => {
                     <img src={border} alt="dotted border" className=' mb-4'/>
                     <button className=' text-white font-semibold bg-Soft-Blue px-10 py-2 text-sm rounded-lg mx-8
                     transition-all duration-300 ease-in-out
-                    border-2 
+                    border-2 border-Soft-Blue
                     hover:bg-white
                      hover:text-Soft-Blue
                       hover:border-Soft-Blue'>
@@ -93,7 +93,7 @@ const Main = () => {
                     <p className=' text-slate-400  px-8  mb-6 text-sm font-medium'>Minimum Version 55</p>
                     <img src={border} alt="dotted border" className=' mb-4'/>
                     <button className=' text-white font-semibold bg-Soft-Blue px-10 py-2 text-sm rounded-lg mx-8
-                     transition-all duration-300 ease-in-out border-2 
+                     transition-all duration-300 ease-in-out border-2 border-Soft-Blue
                      hover:bg-white
                       hover:text-Soft-Blue
                        hover:border-Soft-Blue'>
@@ -106,7 +106,7 @@ const Main = () => {
                     <p className=' text-slate-400 px-8 mb-6 text-sm font-medium'>Minimum Version 46</p>
                     <img src={border} alt="dottedborder" className=' mb-4'/>
                     <button className=' text-white font-semibold bg-Soft-Blue px-10 py-2 text-sm rounded-lg mx-8
-                      transition-all duration-300 ease-in-out border-2 
+                      transition-all duration-300 ease-in-out border-2  border-Soft-Blue
                      hover:bg-white
                       hover:text-Soft-Blue
                        hover:border-Soft-Blue'>
@@ -149,7 +149,7 @@ const Main = () => {
                     )
                 })}
                 <button className=' rounded-lg bg-Soft-Blue font-semibold
-                 text-white mt-11 ml-48 p-3 transition-all duration-300 border-2 
+                 text-white mt-11 ml-48 p-3 transition-all duration-300 border-2 border-Soft-Blue
                  hover:bg-white
                   hover:text-Soft-Blue
                    hover:border-Soft-Blue'> 
