@@ -11,83 +11,253 @@
     position: relative;
     top: 23px;
 }
-.simple-main-banner{
-    transition: all 1s ease-in-out;
-    position: relative;
-}
-.simple-main-banner2{
-    position: relative;
-    bottom: 100px;
-}
-.simple-main-banner::before{
-    content: '';
-    display: block;
-    background-color: hsl(231, 69%, 60%);
-    width:100%;
-    position: absolute;
-    height: 300px;
-    top: 0px;
-    right: 100px;
-    border-radius: 0px 0px 100px 0px ;
-    z-index: -10;
-}
-.simple-main-banner img{
-    position: relative;
-    bottom: 100px;
+
+
+/*  Laptop screen */
+@media (min-width:1024px) {
+    .simple-main-banner{
+        transition: all 1s ease-in-out;
+        position: relative;
+    }
+    .simple-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .simple-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 300px;
+        top: 0px;
+        right: 100px;
+        border-radius: 0px 0px 100px 0px ;
+        z-index: -10;
+    }
+    .simple-main-banner img{
+        position: relative;
+        bottom: 100px;
+    }
+    
+    /* easy banner section */
+    .easy-main-banner{
+        position: relative;
+    }
+    .easy-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .easy-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 300px;
+        top: 0px;
+        right: 100px;
+        border-radius: 0px 0px 100px 0px ;
+        z-index: -10;
+    }
+    .easy-main-banner img{
+        position: relative;
+        bottom: 100px;
+        left: 50px;
+    }
+    
+    /* Speedy section */
+    .speedy-main-banner{
+        position: relative;
+    }
+    .speedy-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .speedy-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 300px;
+        top: 0px;
+        right: 100px;
+        border-radius: 0px 0px 100px 0px ;
+        z-index: -10;
+    }
+    .speedy-main-banner img{
+        position: relative;
+        bottom: 100px;
+        left: 50px;
+    }
+    
 }
 
-/* easy banner section */
-.easy-main-banner{
-    position: relative;
-}
-.easy-main-banner2{
-    position: relative;
-    bottom: 100px;
-}
-.easy-main-banner::before{
-    content: '';
-    display: block;
-    background-color: hsl(231, 69%, 60%);
-    width:100%;
-    position: absolute;
-    height: 300px;
-    top: 0px;
-    right: 100px;
-    border-radius: 0px 0px 100px 0px ;
-    z-index: -10;
-}
-.easy-main-banner img{
-    position: relative;
-    bottom: 100px;
-    left: 50px;
+/*  Tablet screen */
+@media (max-width: 1023px) and (min-width:766px) {
+    .simple-main-banner{
+        transition: all 1s ease-in-out;
+        position: relative;
+        bottom: 100px;
+    }
+    .simple-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .simple-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 250px;
+        /* top: 0px; */
+        right: 70px;
+        border-radius: 0px 30px 70px 0px ;
+        z-index: -10;
+    }
+    .simple-main-banner img{
+        position: relative;
+        bottom: 53px;
+    }
+    
+    /* easy banner section */
+    .easy-main-banner{
+        position: relative;
+    }
+    .easy-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .easy-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 250px;
+        /* top: 0px; */
+        right: 70px;
+        border-radius: 0px 30px 70px 0px ;
+        z-index: -10;
+    }
+    .easy-main-banner img{
+        position: relative;
+        bottom: 120px;
+        /* left: 50px; */
+    }
+    
+    /* Speedy section */
+    .speedy-main-banner{
+        position: relative;
+    }
+    .speedy-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .speedy-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 250px;
+        /* top: 0px; */
+        right: 70px;
+        border-radius: 0px 30px 70px 0px ;
+        z-index: -10;
+    }
+    .speedy-main-banner img{
+        position: relative;
+        bottom: 120px;
+        /* left: 50px; */
+    }
+    
 }
 
-/* Speedy section */
-.speedy-main-banner{
-    position: relative;
-}
-.speedy-main-banner2{
-    position: relative;
-    bottom: 100px;
-}
-.speedy-main-banner::before{
-    content: '';
-    display: block;
-    background-color: hsl(231, 69%, 60%);
-    width:100%;
-    position: absolute;
-    height: 300px;
-    top: 0px;
-    right: 100px;
-    border-radius: 0px 0px 100px 0px ;
-    z-index: -10;
-}
-.speedy-main-banner img{
-    position: relative;
-    bottom: 100px;
-    left: 50px;
-}
-
-@media (max-width: 320px) {
+/* Mobile screen */
+@media (max-width: 765px)  {
+    .simple-main-banner{
+        transition: all 1s ease-in-out;
+        position: relative;
+    }
+    .simple-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .simple-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 150px;
+        top: 0px;
+        right: 100px;
+        border-radius: 0px 60px 30px 0px ;
+        z-index: -10;
+    }
+    .simple-main-banner img{
+        position: relative;
+        height: 200px;
+        bottom: 100px;
+    }
+    
+    /* easy banner section */
+    .easy-main-banner{
+        position: relative;
+    }
+    .easy-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .easy-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 150px;
+        top: 0px;
+        right: 100px;
+        border-radius: 0px 60px 30px 0px ;
+        z-index: -10;
+    }
+    .easy-main-banner img{
+        position: relative;
+        height: 200px;
+        width: 300px;
+        bottom: 100px;
+        left: 20px;
+    }
+    
+    /* Speedy section */
+    .speedy-main-banner{
+        position: relative;
+    }
+    .speedy-main-banner2{
+        position: relative;
+        bottom: 100px;
+    }
+    .speedy-main-banner::before{
+        content: '';
+        display: block;
+        background-color: hsl(231, 69%, 60%);
+        width:100%;
+        position: absolute;
+        height: 150px;
+        top: 0px;
+        right: 100px;
+        border-radius: 0px 60px 30px 0px ;
+        z-index: -10;
+    }
+    .speedy-main-banner img{
+        position: relative;
+        bottom: 100px;
+        height: 200px;
+        width: 300px;
+        left: 20px;
+    }
     
 }

@@ -6,11 +6,11 @@ import './Main.css'
 
 export const SimpleBookmark =()=>{
     return(
-        <div className=' flex tablet:flex-row mobile:flex-col items-center justify-between py-16 pb-24'>
+        <div className=' flex tablet:flex-row mobile:flex-col items-center justify-between py-16 '>
             <div className=' tablet:w-1/2 mobile:w-full simple-main-banner'>
                 <img src={image} alt=" banner image" />
             </div>
-            <div className=' tablet:w-1/2 mobile:w-full tablet:pl-20 mobile:mt-20 tablet:mt-0 simple-main-banner2'>
+            <div className=' tablet:w-1/2 mobile:w-full tablet:pl-20 mobile:mt-20 tablet:mt-0 simple-main-banner2 tablet:text-left mobile:text-center'>
                 <h1 className=' text-3xl font-bold '>
                     Bookmark in one click
                 </h1>
@@ -39,7 +39,7 @@ export const Speedysharing=()=>{
             <div className=' tablet:w-1/2 mobile:w-full speedy-main-banner'>
                 <img src={image2} alt=" banner image-2" />
             </div>
-            <div className=' tablet:w-1/2 mobile:w-full tablet:pl-20 mobile:mt-20 tablet:mt-0 speedy-main-banner2'>
+            <div className=' tablet:w-1/2 mobile:w-full tablet:pl-20 mobile:mt-20 tablet:mt-0 speedy-main-banner2 tablet:text-left mobile:text-center'>
                 <h1 className=' text-3xl font-bold '>
                     Intelligent Search
                 </h1>
@@ -67,7 +67,7 @@ export const Easysharing=()=>{
             <div className=' tablet:w-1/2 mobile:w-full easy-main-banner'>
                 <img src={image3} alt=" banner image" />
             </div>
-            <div className=' tablet:w-1/2 mobile:w-full tablet:pl-20 mobile:mt-20 tablet:mt-0  easy-main-banner2'>
+            <div className=' tablet:w-1/2 mobile:w-full tablet:pl-20 mobile:mt-20 tablet:mt-0  easy-main-banner2 tablet:text-left mobile:text-center'>
                 <h1 className=' text-3xl font-bold'>
                     Share your bookmarks
                 </h1>

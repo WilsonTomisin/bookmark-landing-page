@@ -9,15 +9,15 @@ const Header = () => {
     <div className='laptop:px-24 mobile:px-8 py-8'>
         <Navbar/>
 
-        <div className=' flex justify-between pt-40 mobile:flex-col-reverse laptop:flex-row'>
-            <div className=' mobile:text-center laptop:text-left  '>
+        <div className=' flex justify-between pt-40 mobile:flex-col-reverse tablet:flex-row'>
+            <div className=' mobile:text-center tablet:text-left  '>
                 <h1  className=' text-5xl font-bold '>A Simple Bookmark manager</h1>
                 <p className=' text-slate-500 leading-9 font-medium text-lg mt-3 mb-7'>
                     A clean and simple interface to organize your favourite
                     websites.Open a new browser tab and see your sites loaded 
                     instantly. Try it for free
                 </p>
-                <div className=' flex mobile:justify-evenly laptop:justify-start mobile:text-sm'>
+                <div className=' flex mobile:justify-evenly tablet:justify-start mobile:text-sm'>
                     <button className=' bg-Soft-Blue rounded-md text-white font-semibold laptop:px-6 mobile:px-3 py-2
                     transition-all duration-300 border-2  border-Soft-Blue
                     hover:bg-white
@@ -34,7 +34,7 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-            <div className='main-container2 w-full laptop:h-72 mobile:h-48 mt-12'>
+            <div className='main-container2 w-full laptop:h-72 tablet:h-48 mobile:h-48 mt-12'>
                 <img src={image2} alt="" />
                 
             </div>
