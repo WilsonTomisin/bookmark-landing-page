@@ -1,11 +1,26 @@
-.main-container2{
-    border-radius: 0px 0px 0px 250px;
-    background-color: hsl(231, 69%, 60%);
-    position: relative;
-    left: 100px;
+@media (min-width: 1024px) {
+    .main-container2{
+        border-radius: 0px 0px 0px 250px;
+        background-color: hsl(231, 69%, 60%);
+        position: relative;
+        left: 100px;
+    }
+    .main-container2 img{
+        position: absolute;
+        bottom: 5px;
+        right: 50px;
+    }
 }
-.main-container2 img{
-    position: absolute;
-    bottom: 5px;
-    right: 50px;
+@media (max-width: 1023px) and (min-width:320px ) {
+    .main-container2{
+        position: relative;
+        bottom: 170px;
+        border-radius: 25% 0% 0% 25% ;
+    }
+    .main-container2 img{
+        position: relative;
+        bottom: 30px;
+        left: -100px;
+    }
+    
 }

@@ -13,13 +13,14 @@
     position: relative;
     bottom: 15px;
     transition: all 0.5s ease-in-out;
+    z-index: 10000;
 }
 .hamburger-menu-btn div:not(:last-child){
     margin-bottom: 7px;
 }
 .hamburger-menu-btn input{
     position: relative;
-    z-index: 10;
+    z-index: 100001;
     top: 10px;
     left: 10px;
     opacity: 0;
@@ -38,10 +39,13 @@
 }
 .hamburger-menu-btn .hamburger-menulinks{
     position: absolute;
-    z-index: 10;
+    top: 10px;
+    z-index: 1000;
     width: 300px;
-    transform: translate( 105%);
-    background-color: #ededed;
+    padding: 70px 40px ;
+    /* transform: translate( 105%); */
+    /* background-color:rgba(red, green, blue, alpha); */
+    transition: all 0.5s ease-in-out;
 
 }
 .hamburger-menu-btn input:checked ~ .hamburger-menulinks{

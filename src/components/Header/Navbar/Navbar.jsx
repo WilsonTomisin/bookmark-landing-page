@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className=' flex items-center justify-between '>
         <img src={image} alt="logo" />
-        <ul className=' flex items-center justify-between cursor-pointer laptop:block mobile:hidden'>
+        <ul className=' laptop:flex items-center justify-between cursor-pointer mobile:hidden'>
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Features</li>
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Pricing</li>
             <li className=' px-8 font-semibold transition-all duration-300 hover:text-Soft-Red'>Contact</li>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <div></div>
             <div></div>
 
-            <ul className=' hamburger-menulinks'>
+            {/* <ul className=' hamburger-menulinks'>
                   <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Features</li>
                   <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Pricing</li>
                   <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Contact</li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                         LOGIN
                       </button>
                   </li>
-              </ul>
+              </ul> */}
           </div>
           
         </div>
