@@ -85,7 +85,9 @@ const Main = () => {
                     const card2 = index == 1 ? 'tablet:mt-20' : ''
 
                     return(
-                            <div className= {` ${card2} ${card3} rounded-lg laptop:py-8 tablet:py-4 mobile:py-8 laptop:shadow-lg tablet:shadow-none mobile:shadow-lg shadow-slate-400 tablet:mb-0 mobile:mb-11 `}>
+                            <div className= {` ${card2} ${card3} rounded-lg laptop:py-8 tablet:py-4
+                             mobile:py-8 laptop:shadow-lg tablet:shadow-none mobile:shadow-lg shadow-slate-400 
+                             tablet:mb-0 mobile:mb-11 `} key={index}>
                                 <img src={item.image} alt={item.altText} className=' mx-auto px-8 pb-8' />
                                 <h1 className=' text-xl font-bold px-8 mb-3'>{item.text}</h1>
                                 <p className=' text-slate-400 px-8 mb-6 text-sm font-medium'>{item.version}</p>

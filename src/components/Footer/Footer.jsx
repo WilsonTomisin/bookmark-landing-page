@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
       <div className=' px-24 py-10 bg-Very-Dark-Blue flex laptop:flex-row mobile:flex-col justify-between'>
             <div className=' flex justify-between items-center laptop:flex-row mobile:flex-col'>
-                <img src={logo} alt=" footer logo"  className=' h-auto mobile:w-52 mobile:mb-5 bg-white px-3 py-2'/>
+                <img src={logo} alt=" footer logo"  className=' h-auto mobile:w-52 mobile:mb-5 laptop:mb-0 bg-white px-3 py-2'/>
                 <ul className=' flex laptop:flex-row mobile:flex-col justify-between laptop:text-slate-400 mobile:text-white mobile:text-center font-semibold'>
                     <li className=' mobile:mb-5 laptop:mb-0 px-8 transition-all duration-300 hover:text-Soft-Red'>FEATURES</li>
                     <li className=' mobile:mb-5 laptop:mb-0 px-8 transition-all duration-300 hover:text-Soft-Red'>PRICING</li>

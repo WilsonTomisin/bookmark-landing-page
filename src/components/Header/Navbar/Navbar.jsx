@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 import image from  '../../../assests/images/logo-bookmark.svg'
+import {AiFillFacebook,AiOutlineTwitter } from 'react-icons/ai'
 
 const Navbar = () => {
   return (
@@ -27,16 +28,27 @@ const Navbar = () => {
             <div></div>
             <div></div>
 
-            {/* <ul className=' hamburger-menulinks'>
-                  <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Features</li>
-                  <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Pricing</li>
-                  <li className=' font-semibold transition-all duration-300 hover:text-Soft-Red'>Contact</li>
-                  <li>
-                      <button className=''>
+            <ul className=' hamburger-menulinks w-full h-full text-white text-center px-56'>
+                  <li className=' border-t border-white font-normal transition-all duration-300 hover:text-Soft-Red py-3'>
+                    Features
+                  </li>
+                  <li className=' border-t border-white font-normal transition-all duration-300 hover:text-Soft-Red py-3'>
+                    Pricing
+                  </li>
+                  <li className=' border-t border-white font-normal transition-all duration-300 hover:text-Soft-Red py-3'>
+                    Contact
+                  </li>
+                  <li className=' border-t border-white'>
+                      <button className=' border-2 border-white 
+                      mt-3 w-full py-2 transition-all duration-300 hover:bg-white hover:text-black '>
                         LOGIN
                       </button>
                   </li>
-              </ul> */}
+                  <li className=' flex justify-center items-center text-3xl mt-24'>
+                    <span className=' mr-3'> <AiFillFacebook/> </span>
+                    <span> <AiOutlineTwitter/> </span>
+                  </li>
+            </ul>
           </div>
           
         </div>

@@ -31,7 +31,9 @@
     transform-origin: top left;
 }
 .hamburger-menu-btn input:checked ~ div:nth-child(3){
+    transform: rotate(360deg);
     opacity: 0;
+    
 }
 .hamburger-menu-btn input:checked ~ div:nth-child(4){
     transform: rotate(-45deg);
@@ -39,15 +41,21 @@
 }
 .hamburger-menu-btn .hamburger-menulinks{
     position: absolute;
-    top: 10px;
+    /* top: 10px; */
     z-index: 1000;
-    width: 300px;
     padding: 70px 40px ;
-    /* transform: translate( 105%); */
-    /* background-color:rgba(red, green, blue, alpha); */
+    /* left: 5px; */
+    left: 100%;
+    /* transform: translate( 105%,0%); */
+    opacity: 0;
+    background-color: rgb(18, 18, 59);
     transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
 
 }
 .hamburger-menu-btn input:checked ~ .hamburger-menulinks{
-    transform: translate(-105%);
+    overflow-y: hidden;
+    transform: none;
+    left: 5px;
+    opacity: 0.95;
 }
